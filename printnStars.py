@@ -4,6 +4,6 @@
 
 def printnStars(num):
     for i in range(1,num):
-    print(' '*((num-1)-i),' *'*i)
+        print(' '*((num-1)-i),' *'*i)
 
 printnStars(6)
