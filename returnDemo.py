@@ -13,7 +13,7 @@ def randEven(low,high):
 print("your even nmbers are", randEven(11,99),randEven(11,99),randEven(11,99)) #test of randEven
 num4 = randEven(1000,2000)
 
-if num4 > 1500:
+if num4 < 1500:
     print(num4, "is pretty big")
 else:
     print(num4, "is really big")
