@@ -3,6 +3,6 @@
 #returnDemo.py - how to use return
 
 def randEven(low,high):
-    print low
+    print(low)
     
 randEven(0,10) #test of randEven
