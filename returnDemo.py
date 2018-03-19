@@ -5,6 +5,9 @@
 from random import randint
 
 def randEven(low,high):
-    print(randint(low/2,high/2)*2)
+    n = randit(low,high)
+    while n%2 != 0:
+        n = randint(low,high)
+    print(n)
     
 randEven(11,21) #test of randEven
