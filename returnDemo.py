@@ -10,4 +10,4 @@ def randEven(low,high):
         n = randint(low,high)
     print(n)
     
-randEven(11,21) #test of randEven
+print("your even nmbers are", randEven(11,99),randEven(11,99),randEven(11,99)) #test of randEven
