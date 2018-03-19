@@ -8,6 +8,6 @@ def randEven(low,high):
     n = randint(low,high)
     while n%2 != 0:
         n = randint(low,high)
-    print(n)
+    return n
     
 print("your even nmbers are", randEven(11,99),randEven(11,99),randEven(11,99)) #test of randEven
