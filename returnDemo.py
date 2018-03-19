@@ -7,4 +7,4 @@ from random import randint
 def randEven(low,high):
     print(randint(low/2,high/2)*2)
     
-randEven(10,20) #test of randEven
+randEven(11,21) #test of randEven
