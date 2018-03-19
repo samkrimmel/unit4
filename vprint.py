@@ -6,4 +6,4 @@ def vprint(word):
     for ch in word:
         print(ch)
 
-vprint('Smeds')
+vprint('memes are pretty darn cool')
