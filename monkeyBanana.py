@@ -11,6 +11,6 @@ if __name__ == '__main__':
     
     jungleBox = RectangleAsset(800,500,LineStyle(1,green),green)
     
-    sprite(JungleBox)
+    Sprite(JungleBox)
     
     App().run()
