@@ -15,7 +15,7 @@ def moveRight(event):
         monkey.x += CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 50
+            data['score'] += 10
             print(data['score'])
 
 def moveUp(event):
@@ -23,7 +23,7 @@ def moveUp(event):
         monkey.y -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 50
+            data['score'] += 10
             print(data['score'])
 
 def moveDown(event):
@@ -31,7 +31,7 @@ def moveDown(event):
         monkey.y += CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 50
+            data['score'] += 10
             print(data['score'])
 
 def moveLeft(event):
@@ -39,7 +39,7 @@ def moveLeft(event):
         monkey.x -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 50
+            data['score'] += 10
             print(data['score'])
 
 def moveBanana():
