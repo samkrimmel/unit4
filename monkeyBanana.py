@@ -26,12 +26,15 @@ if __name__ == '__main__':
     #colors
     green = Color(0x006600,1)
     brown = Color(0x8B4513,1)
+    yellow - Color(0xffff00,1)
     
     jungleBox = RectangleAsset(CELL_SIZE*COLS,CELL_SIZE*ROWS,LineStyle(1,green),green)
     monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,brown),brown)
+    bananaBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,yellow),yellow)
     
     Sprite(jungleBox)
     monkey = Sprite(monkeyBox)
+    banana = Sprite(bananaBox,(CELL_SIZE*COLS/2,CELL_SIZE*ROWS/2))
     
     App().listenKeyEvent('keydown','right arrow',moveRight)
     App().listenKeyEvent('keydown','up arrow',moveUp)
