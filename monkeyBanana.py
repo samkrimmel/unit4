@@ -17,12 +17,18 @@ def moveRight(event):
 
 def moveUp(event):
     monkey.y -= CELL_SIZE
+    if monkey.x == banana.x and monkey.y == banana.y:
+        moveBanana()
 
 def moveDown(event):
     monkey.y += CELL_SIZE
+    if monkey.x == banana.x and monkey.y == banana.y:
+        moveBanana()
 
 def moveLeft(event):
     monkey.x -= CELL_SIZE
+    if monkey.x == banana.x and monkey.y == banana.y:
+        moveBanana()
 
 def moveBanana():
     banana.x = randint(0,COLS-1)*CELL_SIZE
