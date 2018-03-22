@@ -2,6 +2,7 @@
 #3/22/18
 #monkeyBanana.py - the best game ever
 
+from random import randint
 from ggame import *
 
 #constants
@@ -12,7 +13,7 @@ CELL_SIZE = 20
 def moveRight(event):
     monkey.x += CELL_SIZE
     if monkey.x == banana.x and monkey.y == banana.y:
-        print('You now hav a banane')
+        moveBanana()
 
 def moveUp(event):
     monkey.y -= CELL_SIZE
@@ -23,6 +24,10 @@ def moveDown(event):
 def moveLeft(event):
     monkey.x -= CELL_SIZE
 
+def moveBanana():
+    banana.x = randint(0,COLS-1)*CELL_SIZE
+    banana.y = randint(0,ROWS-1)*CELL_SIZE
+    
 if __name__ == '__main__':
     
     #colors
