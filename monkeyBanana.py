@@ -11,6 +11,8 @@ CELL_SIZE = 20
 
 def moveRight(event):
     monkey.x += CELL_SIZE
+    if monkey.x == banana.x and monkey.y == banana.y:
+        print('YEEET')
 
 def moveUp(event):
     monkey.y -= CELL_SIZE
