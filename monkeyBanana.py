@@ -19,5 +19,6 @@ if __name__ == '__main__':
     monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,brown),brown)
     
     Sprite(jungleBox)
+    Sprite(monkeyBox)
     
     App().run()
