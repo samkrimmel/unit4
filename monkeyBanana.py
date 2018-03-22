@@ -6,7 +6,7 @@ from ggame import *
 
 #constants
 ROWS = 30
-COLS = 50
+COLS = 53
 CELL_SIZE = 20
 
 if __name__ == '__main__':
