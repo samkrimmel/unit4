@@ -9,7 +9,7 @@ if __name__ == '__main__':
     #colors
     green = Color(0x006600,1)
     
-    jungleBox = RectagleAsset(800,500,LineStyle(1,green),green)
+    jungleBox = RectangleAsset(800,500,LineStyle(1,green),green)
     
     sprite(JungleBox)
     
