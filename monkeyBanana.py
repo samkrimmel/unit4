@@ -19,7 +19,7 @@ def moveDown(event):
     monkey.y += CELL_SIZE
 
 def moveLeft(event):
-    monkey.x += CELL_SIZE
+    monkey.x -= CELL_SIZE
 
 if __name__ == '__main__':
     
