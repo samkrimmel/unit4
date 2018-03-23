@@ -39,6 +39,7 @@ def moveLeft(event):
             updateScore()
 
 def moveBanana():
+    data['frames'] == 0
     banana.x = randint(0,COLS-1)*CELL_SIZE
     banana.y = randint(0,ROWS-1)*CELL_SIZE
     
@@ -52,8 +53,6 @@ def step():
     data['frames'] += 1
     if data['frames']%300 == 0:
         moveBanana()
-    if monkey.x == banana.x and monkey.y == banana.y:
-        data['frames'] == 0
     
 if __name__ == '__main__':
     
