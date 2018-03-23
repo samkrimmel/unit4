@@ -48,6 +48,9 @@ def updateScore():
     scoreBox = TextAsset('Score = '+str(data['score']))
     data['scoreText'] = Sprite(scoreBox,(0,ROWS*CELL_SIZE))
     
+def step():
+    moveBanana()
+    
 if __name__ == '__main__':
     
     #hold variables in a dictionary
@@ -73,4 +76,4 @@ if __name__ == '__main__':
     App().listenKeyEvent('keydown','up arrow',moveUp)
     App().listenKeyEvent('keydown','down arrow',moveDown)
     App().listenKeyEvent('keydown','left arrow',moveLeft)
-    App().run()
+    App().run(step)
