@@ -46,6 +46,7 @@ def updateScore():
     data['score'] += 10
     data['scoreText'].destroy() #remove old writing
     scoreBox = TextAsset('Score = '+str(data['score']))
+    data['scoreText'] = Sprite(scoreBox,(0,ROWS*CELL_SIZE))
     
 if __name__ == '__main__':
     
