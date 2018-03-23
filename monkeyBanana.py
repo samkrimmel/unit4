@@ -49,13 +49,16 @@ def updateScore():
     data['scoreText'] = Sprite(scoreBox,(0,ROWS*CELL_SIZE))
     
 def step():
-    moveBanana()
+    data['frames'] += 1
+    if data['frames']%300 == 0:
+        moveBanana()
     
 if __name__ == '__main__':
     
     #hold variables in a dictionary
     data = {}
     data['score'] = 0
+    data['frames'] = 0
     
     #colors
     green = Color(0x006600,1)
