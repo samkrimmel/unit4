@@ -6,7 +6,7 @@ from random import randint
 from ggame import *
 
 #constants
-ROWS = 26
+ROWS = 24
 COLS = 50
 CELL_SIZE = 20
 
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     Sprite(jungleBox)
     monkey = Sprite(monkeyBox)
     banana = Sprite(bananaBox,(CELL_SIZE*COLS/2,CELL_SIZE*ROWS/2))
-    Sprite(scoreBox,
+    Sprite(scoreBox,(0,ROWS*CELL_SIZE))
     
     App().listenKeyEvent('keydown','right arrow',moveRight)
     App().listenKeyEvent('keydown','up arrow',moveUp)
