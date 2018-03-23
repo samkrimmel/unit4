@@ -61,6 +61,7 @@ def step():
     if data['frames'] == 300:
         moveBanana()
     
+#sets up and runs the game
 if __name__ == '__main__':
     
     #hold variables in a dictionary
@@ -73,6 +74,7 @@ if __name__ == '__main__':
     brown = Color(0x8B4513,1)
     yellow = Color(0xffff00,1)
     
+    #graphics
     jungleBox = RectangleAsset(CELL_SIZE*COLS,CELL_SIZE*ROWS,LineStyle(1,green),green)
     monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,brown),brown)
     bananaBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,yellow),yellow)
