@@ -47,12 +47,13 @@ def updateScore():
     data['scoreText'].destroy() #remove old writing
     scoreBox = TextAsset('Score = '+str(data['score']))
     data['scoreText'] = Sprite(scoreBox,(0,ROWS*CELL_SIZE))
-    data['frames'] == 0
     
 def step():
     data['frames'] += 1
     if data['frames']%300 == 0:
         moveBanana()
+    if monkey.x == banana.x and monkey.y == banana.y:
+        data['frames'] == 0
     
 if __name__ == '__main__':
     
