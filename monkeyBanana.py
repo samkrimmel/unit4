@@ -15,36 +15,36 @@ def moveRight(event):
         monkey.x += CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 10
-            print(data['score'])
+            updateScore()
 
 def moveUp(event):
     if monkey.y > 0:
         monkey.y -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 10
-            print(data['score'])
+            updateScore()
 
 def moveDown(event):
     if monkey.y < (ROWS-1)*CELL_SIZE:
         monkey.y += CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 10
-            print(data['score'])
+            updateScore()
 
 def moveLeft(event):
     if monkey.x > 0 :
         monkey.x -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            data['score'] += 10
-            print(data['score'])
+            updateScore()
 
 def moveBanana():
     banana.x = randint(0,COLS-1)*CELL_SIZE
     banana.y = randint(0,ROWS-1)*CELL_SIZE
+    
+def updateScore():
+    data['score'] += 10
+    print(data['score'])
     
 if __name__ == '__main__':
     
