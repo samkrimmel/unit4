@@ -2,6 +2,8 @@
 #3/19/18
 #colorChangeWindow.py - pops up window that changes to a random color every time you click it
 
+from random import randint
+
 num = randint(1,7)
 if num == 1:
     color = white
