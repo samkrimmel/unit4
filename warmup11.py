@@ -9,6 +9,4 @@ def prime(x):
             divisible += 1
     return divisible==0
     
-    
-print(prime(9))
-    
+print(prime(1))
