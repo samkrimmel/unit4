@@ -8,4 +8,4 @@ def prime(x):
             return False
     return True
     
-print(prime(1))
+print(prime(5903840932))
