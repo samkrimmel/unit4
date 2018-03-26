@@ -3,6 +3,7 @@
 #colorChangeWindow.py - pops up window that changes to a random color every time you click it
 
 from random import randint
+from ggame import *
 
 white = Color(0xFFFFFF,1)
 black = Color(0x000000,1)
