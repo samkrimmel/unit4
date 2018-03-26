@@ -26,6 +26,6 @@ def mouseClick(event):
         color = red
     else:
         color = green
-    window = RectangleAsset(300,60,color)
+    window = RectangleAsset(300,60,LineStyle(1,color),color)
     Sprite(window)
 App().run()
