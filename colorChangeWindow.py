@@ -24,4 +24,5 @@ red = Color(0xff0f0f,1)
 green = Color(0x08d63f,1)
 
 def mouseClick(event)
-    RectangleAsset(300,60, color)
+    window = RectangleAsset(300,60, color)
+    Sprite(window)
