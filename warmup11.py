@@ -7,5 +7,8 @@ def prime(x):
     for i in range(2,x):
         if x%i==0:
             divisible += 1
-    return divisible
+    return divisible==0
+    
+    
+print(prime(9))
     
