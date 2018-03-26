@@ -2,9 +2,11 @@
 #3/26/18
 #localDemo.py - what is a local variables?
 
-def f(x):
-    x = 20
-
+def f():
+    x = 20 #x within the function exists only within the function
+    y = 200
+    
 x = 2
-f(x)
+f()
 print(x)
+print(y)
