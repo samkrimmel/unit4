@@ -4,12 +4,12 @@
 
 from random import randint
 
-white = Color(0xffffff,1)
+white = Color(0xFFFFFF,1)
 black = Color(0x000000,1)
-yellow = Color(0xffe500,1)
-blue = Color(0x4da9f9,1)
-red = Color(0xff0f0f,1)
-green = Color(0x08d63f,1)
+yellow = Color(0xFFE500,1)
+blue = Color(0x4DA9F9,1)
+red = Color(0xFF0F0F,1)
+green = Color(0x08D63F,1)
 
 def mouseClick(event):
     num = randint(1,7)
