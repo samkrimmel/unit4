@@ -12,20 +12,6 @@ blue = Color(0x4DA9F9,1)
 red = Color(0xFF0F0F,1)
 green = Color(0x08D63F,1)
 
-num = randint(1,7)
-if num == 1:
-    color = white
-elif num ==2:
-    color = black
-elif num ==3:
-    color = yellow
-elif num == 4:
-    color = blue
-elif num == 5:
-    color = red
-else:
-    color = green
-        
 def mouseClick(event):
     num = randint(1,7)
     if num == 1:
@@ -42,6 +28,6 @@ def mouseClick(event):
         color = green
     window = RectangleAsset(300,60,LineStyle(1,color),color)
     Sprite(window)
-window = RectangleAsset(300,60,LineStyle(1,color),color)
-Sprite(window)
+
+App().listenMouseEvent('click',mouseClick)
 App().run()
