@@ -28,4 +28,4 @@ def mouseClick(event):
         color = green
     window = RectangleAsset(300,60,color)
     Sprite(window)
-    App().run()
+App().run()
