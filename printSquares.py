@@ -8,4 +8,4 @@ def printSquares(vert,horz):
         print(horz*'|  ' + '|')
     print(horz*'+--' + '+')
 
-printSquares(2,4)
+printSquares(5,10)
