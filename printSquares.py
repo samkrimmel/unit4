@@ -4,5 +4,6 @@
 
 def printSquares(vert,horz):
     print(horz*'+--' + '+')
-    print(vert*'|   ' + '|')
+    print(horz*'|  ' + '|')
 
+printSquares(2,4)
