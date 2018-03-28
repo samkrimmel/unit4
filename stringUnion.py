@@ -1,1 +1,16 @@
+#Sam Krimmel
+#3/28/18
+#stringUnion.py - uses all letters from two words only once
 
+def stringUnion(word1,word2):
+    final = str('')
+    for ch in word1:
+        if ch in final:
+        else:
+            final += str(ch)
+    for ch in word2:
+        if ch in final:
+        else:
+            final += str(ch)
+            
+        
