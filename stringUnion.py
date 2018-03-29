@@ -6,10 +6,10 @@ def stringUnion(word1,word2):
     final = ''
     for ch in word1:
         if not ch.lower() in final.lower():
-            final += ch
+            final += ch.lower()
     for ch in word2:
         if not ch.lower() in final.lower():
-            final += ch
+            final += ch.lower()
     return final
             
         
