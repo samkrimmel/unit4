@@ -14,3 +14,4 @@ def stringUnion(word1,word2):
             final += str(ch)
             
         
+stringUnion('Mississippi','Pennsylvania')
