@@ -5,9 +5,11 @@
 def GCF(x,y):
     if x>y:
         for i in range((x+1),1,-1):
-            if i%x == 0 and i%y == 0:
+            if x%i == 0 and y%i == 0:
                 return i
     else:
         for i in range((y+1),1,-1):
-            if i%x == 0 and i%y == 0:
+            if x%i == 0 and y%i == 0:
                 return i
+                
+print(GCF(12,15))
