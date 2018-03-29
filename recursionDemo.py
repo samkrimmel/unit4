@@ -5,5 +5,8 @@
 def countdownr(n):
     if n == 0: #easiest case (base case)
         print('BOOM!')
+    else:
+        print(n)
+        countdownr(n-1)
 
-countdown(0)
+countdownr(0)
