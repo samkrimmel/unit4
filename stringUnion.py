@@ -6,11 +6,9 @@ def stringUnion(word1,word2):
     final = str('')
     for ch in word1:
         if not ch in final:
-        else:
             final += str(ch)
     for ch in word2:
         if not ch in final:
-        else:
             final += str(ch)
             
         
