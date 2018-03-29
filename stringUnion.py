@@ -13,4 +13,4 @@ def stringUnion(word1,word2):
     return final
             
         
-print(stringUnion('Mississippi','Pennsylvania'))
+print(stringUnion('concrete','buildingplace'))
