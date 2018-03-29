@@ -5,11 +5,12 @@
 def stringUnion(word1,word2):
     final = ''
     for ch in word1:
-        if not ch in final:
+        if not ch.lower() in final.lower():
             final += ch
     for ch in word2:
-        if not ch in final:
+        if not ch.lower() in final.lower():
             final += ch
+    return final
             
         
-stringUnion('Mississippi','Pennsylvania')
+print(stringUnion('Mississippi','Pennsylvania'))
