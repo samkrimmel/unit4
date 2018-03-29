@@ -8,3 +8,6 @@ def stringIntersect(word1,word2):
     for ch in combword:
         if ch.lower() not in final.lower():
             final += ch.lower()
+    return final
+    
+print(stringIntersect('Mississippi','Pennsylvania'))
