@@ -5,8 +5,8 @@
 def countdownr(n):
     if n == 0: #easiest case (base case)
         print('BOOM!')
-    else:
+    else: #function that calls itself (recursive step)
         print(n)
         countdownr(n-1)
 
-countdownr(0)
+countdownr(23)
