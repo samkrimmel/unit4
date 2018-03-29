@@ -3,13 +3,13 @@
 #stringUnion.py - uses all letters from two words only once
 
 def stringUnion(word1,word2):
-    final = str('')
+    final = ''
     for ch in word1:
         if not ch in final:
-            final += str(ch)
+            final += ch
     for ch in word2:
         if not ch in final:
-            final += str(ch)
+            final += ch
             
         
 stringUnion('Mississippi','Pennsylvania')
