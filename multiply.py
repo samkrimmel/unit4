@@ -22,8 +22,8 @@ numWrong = 0
 while True:
     num1 = randint(1,12)
     num2 = randint(1,12)
-    answer = int(input('What is ' + str(num1) + ' + ' + str(num2) + '? '))
-    if answer =! num1 + num2:
+    answer = int(input('What is ' + str(num1) + ' x ' + str(num2) + '? '))
+    if answer != num1 + num2:
         print('WRONG!!')
         print('The answer was', num1+num2)
         encourage()
