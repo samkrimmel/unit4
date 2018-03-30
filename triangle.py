@@ -18,7 +18,7 @@ def triangle(x1,y1,x2,y2,x3,y3):
     side1 = distance(x1,y1,x2,y2)
     side2 = distance(x1,y1,x3,y3)
     side3 = distance(x2,y2,x3,y3)
-    s = 0.5*(side1 + side2 + side3)
+    s = (side1 + side2 + side3)/2
     return sqrt(s*((s-side1)*(s-side2)*(s-side3)))
 
 print(triangle(x1,y1,x2,y2,x3,y3))
