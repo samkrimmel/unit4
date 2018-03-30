@@ -4,12 +4,15 @@
 
 from math import sqrt
 
+def distance(x1,y1,x2,y2):
+    return sqrt(((x2-x1)**2)+((y2-y1)**2))
+
 def triangle(x1,y1,x2,y2,x3,y3):
-    side12 = sqrt(((x2-x1)**2)+((y2-y1)**2))
-    side23 = sqrt(((x3-x2)**2)+((y3-y2)**2))
-    side13 = sqrt(((x3-x1)**2)+((y3-y1)**2))
-    s = 0.5*(side12 + side23 + side13)
-    print(sqrt(s((s-side12)(s-side23)(s-side13))))
+    side1 = distance(x1,y1,x2,y2)
+    side2 = distance(x1,y1,x3,y3)
+    side3 = distance(x2,y2,x3,y3)
+    s = 0.5*(side1 + side2 + side3)
+    print(sqrt(s((s-side1)(s-side2)(s-side3))))
     
 triangle(3,4,-5,2,-7,1)
 
