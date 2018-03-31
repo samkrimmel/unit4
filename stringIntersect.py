@@ -4,8 +4,8 @@
 
 def stringIntersect(word1,word2):
     final = ' '
-    for ch in word2:
-        if ch.lower() in word1:
+    for ch in word1:
+        if ch.lower() in word2.lower() and ch.lower() not in final:
             final += ch.lower()
     return final
     
