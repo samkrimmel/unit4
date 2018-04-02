@@ -7,7 +7,7 @@ def count(num):
         print(i)
 
 def excitedPrint(word):
-    print(word.upper(),'!!!')
+    print(word.upper()+'!!!')
 
 def firstLetter(word):
     for ch in word:
@@ -18,3 +18,8 @@ def repeats(a,b,c):
         return True
     else:
         return False
+        
+count(7)
+excitedPrint('I <3 Progamming')
+print(firstLetter('Smeddinghoff'))
+print(repeats(5,6,5))
